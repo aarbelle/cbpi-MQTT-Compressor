@@ -1,4 +1,8 @@
 try:
+  
+  from modules import cbpi
+  from modules.base_plugins.gpio_actor import *
+  from modules.core.props import Property
   from modules.plugins.MQTTPlugin import MQTTActor
   
   import time
