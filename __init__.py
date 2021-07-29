@@ -21,6 +21,6 @@ try:
               print('Can not start actor for another {} seconds due to delay.'.format(self.last_off + self.delay_sec - time.time()))
       def off(self):
           self.last_off = time.time()
-          uper(MQTTCompressor, self).off()
+          super(MQTTCompressor, self).off()
 except ImportError:
   print('Missing MQTT plugin')
