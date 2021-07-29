@@ -19,4 +19,4 @@ try:
           self.last_off = time.time()
           uper(MQTTCompressor, self).off()
 except ImportError:
-  print('Missing MQTT plugin)
+  print('Missing MQTT plugin')
