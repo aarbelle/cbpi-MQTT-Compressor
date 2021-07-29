@@ -12,10 +12,10 @@ class Compressor(object):
       self.last_off = 0 
       self.delay_sec = float(self.delay)*60.
     def on(self, power=100):
-        if self.last_off + self.delay_sec < time.time():
+        if (self.last_off + self.delay_sec) < time.time():
             super(Compressor, self).on(power)
-        else:
-            print('Can not start actor for another {} seconds due to delay.'.format(self.last_off + self.delay_sec - time.time()))
+#        else:
+ #           print('Can not start actor for another {} seconds due to delay.'.format(self.last_off + self.delay_sec - time.time()))
     def off(self):
         self.last_off = time.time()
         super(Compressor, self).off()
