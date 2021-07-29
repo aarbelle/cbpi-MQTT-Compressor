@@ -21,5 +21,5 @@ try:
       def off(self):
           self.last_off = time.time()
           super(MQTTCompressor, self).off()
-except ImportError:
-  print('Missing MQTT plugin')
+#except ImportError:
+ # print('Missing MQTT plugin')
