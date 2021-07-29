@@ -1,5 +1,5 @@
 try:
-  from modules.plugins.cbpi_mqtt import MQTTActor
+  from modules.plugins.MQTTPlugin import MQTTActor
   
   import time
   @cbpi.actor
