@@ -3,7 +3,7 @@ from modules.core.props import Property
 from modules.plugins.MQTTPlugin import MQTTActor
 
 import time
-@cbpi.actor
+#@cbpi.actor
 class MQTTCompressor(MQTTActor):
     topic = Property.Text("Topic", configurable=True, default_value="", description="MQTT TOPIC")
     delay = Property.Number("Delay (Min)", configurable=True, default_value=3, description="Safty delay for compressor")
